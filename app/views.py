@@ -37,5 +37,5 @@ def workdir_view(request):
     # директории
     list_dir = listdir()
     msg_dir = f'Список каталогов: {list_dir}'
-    raise HttpResponse(msg_dir)
+    return HttpResponse(msg_dir)
 
